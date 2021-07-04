@@ -205,6 +205,7 @@ body {
 }
 
 body.oh {
+  position: relative;
   overflow: hidden;
 }
 
@@ -220,8 +221,10 @@ body.oh {
 }
 
 .header__top {
+  position: relative;
   background-color: #ededed;
   padding: 16px 0;
+  z-index: 11;
 }
 
 .header__inner {
@@ -244,6 +247,8 @@ body.oh {
   align-items: center;
 }
 
+.menu__button-icon {
+}
 .menu__button button span {
   display: block;
   width: 20px;
@@ -256,6 +261,30 @@ body.oh {
 .menu__button button span:nth-child(2) {
   width: 14px;
   margin: 6px 0px 0px 0px;
+}
+
+.header__menu-bar {
+  position: absolute;
+  background-color: #f6f6f6;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: -100%;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+.header__menu-bar li {
+  margin: 0px 0px 10px 0px;
+}
+.header__menu-bar.active {
+  top: 0;
+}
+
+.with-drop {
 }
 
 .header__logo {

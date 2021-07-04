@@ -1,66 +1,26 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
-
-<body>
-
-  <!-- header -->
-  <header class="header">
-
-    <div class="header__top">
-      <div class="container">
-        <div class="header__inner">
-          <div class="menu__button">
-            <button>
-              <div class="menu__button-icon">
-                <span></span>
-                <span></span>
-              </div>
-            </button>
-          </div>
-          <div class="header__logo">
-            <a href="#!">
-              <img src="images/logo.svg" alt="">
-            </a>
-          </div>
-          <div class="header__actions">
-            <a href="#!">Log in</a>
-            <a href="#!">Create account</a>
-          </div>
-          <div class="header__search">
-            <a class="header__search-btn" href="#!">
-              <svg xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#search-icon"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="header__cart">
-            <a class="header__cart-link" href="#!">
-              40,25$
-              <span class="header__cart-notif"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-
-    <div class="container">
-      <div class="header__catalog">
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__menu-bar">
         <ul>
           <li class="with-drop"><a href="#!">Whiskey</a></li>
           <li class="with-drop"><a href="#!">Tequila</a></li>
@@ -73,274 +33,154 @@
           <li class="with-drop"><a href="#!">Wine</a></li>
         </ul>
       </div>
-    </div>
-
-  </header>
-  <!-- header -->
-
-  <!-- main -->
-  <main>
-    <!-- intro -->
-    <section class="intro">
-      <div class="container">
-        <div class="intro__slider">
-          <div class="intro__slide" style="background-image: url(images/intro-img.jpg);">
-            <h3 class="intro__title">
-              Lightning Fast Shipping
-            </h3>
-            <p class="intro__subtitle">
-              From Our Haus to Yours
-            </p>
-            <div class="intro__slides-counter">
-              <span class="intro__slide-current"></span> <span class="intro__slide-all"></span>
+      <div class="header__top">
+        <div class="container">
+          <div class="header__inner">
+            <div class="menu__button">
+              <button>
+                <div class="menu__button-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </button>
             </div>
-          </div>
-          <div class="intro__slide" style="background-image: url(images/intro-img.jpg);">
-            <h3 class="intro__title">
-              Lightning Fast Shipping
-            </h3>
-            <p class="intro__subtitle">
-              From Our Haus to Yours
-            </p>
-            <div class="intro__slides-counter">
-              <span class="intro__slide-current"></span> <span class="intro__slide-all"></span>
+            <div class="header__logo">
+              <a href="#!">
+                <img src="images/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="header__actions">
+              <a href="#!">Log in</a>
+              <a href="#!">Create account</a>
+            </div>
+            <div class="header__search">
+              <a class="header__search-btn" href="#!">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#search-icon"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__cart">
+              <a class="header__cart-link" href="#!">
+                40,25$
+                <span class="header__cart-notif"></span>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- intro -->
 
-    <!-- steps -->
-    <section class="steps">
       <div class="container">
-        <div class="steps__inner">
-          <div class="steps__item-wrap">
-            <div class="steps__item">
-              <h3 class="steps__title">
-                <span>Search</span>
-              </h3>
-              <p class="steps__text">
-                1500+ bottles to choose from
-              </p>
-              <div class="steps__img">
-                <img src="images/step-img-1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="steps__item-wrap">
-            <div class="steps__item">
-              <h3 class="steps__title">
-                <span>Tap</span>
-              </h3>
-              <p class="steps__text">
-                Checkout in seconds with express checkout
-              </p>
-              <div class="steps__img">
-                <img src="images/step-img-2.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="steps__item-wrap">
-            <div class="steps__item">
-              <h3 class="steps__title">
-                <span>Drink</span>
-              </h3>
-              <p class="steps__text">
-                Delivered to your door within days
-              </p>
-              <div class="steps__img">
-                <img src="images/step-img-3.png" alt="">
-              </div>
-            </div>
-          </div>
+        <div class="header__catalog">
+          <ul>
+            <li class="with-drop"><a href="#!">Whiskey</a></li>
+            <li class="with-drop"><a href="#!">Tequila</a></li>
+            <li><a href="#!">Vodka</a></li>
+            <li><a href="#!">Gin</a></li>
+            <li><a href="#!">Cognac & Brandy</a></li>
+            <li><a href="#!">Rum</a></li>
+            <li class="with-drop"><a href="#!">Liqueur & More</a></li>
+            <li><a href="#!">Champagne</a></li>
+            <li class="with-drop"><a href="#!">Wine</a></li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- steps -->
+    </header>
+    <!-- header -->
 
-    <!-- products -->
-    <section class="products">
-      <div class="container">
-        <div class="products__top">
-          <h2 class="section__title gray section__title--min">
-            Bottles <span>Under $50</span>
-          </h2>
-          <div class="see__all">
-            <a href="#!" class="btn-green">
-              Show all
-            </a>
-          </div>
-        </div>
-        <div class="products__inner">
-          <div class="products__item-wrap">
-            <div class="product__item">
-              <a href="#!" class="product-item__img">
-                <img src="images/content/product-img-1.png" alt="">
-                <div class="product-item__add">
-                  <button>+</button>
-                </div>
-              </a>
-              <h3 class="product-item__title">
-                <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
-              </h3>
-              <div class="product-item__price price__inner">
-                <span class="product-item__price-new price-new">$20.95</span>
-                <span class="product-item__price-old price-old">$24.95</span>
+    <!-- main -->
+    <main>
+      <!-- intro -->
+      <section class="intro">
+        <div class="container">
+          <div class="intro__slider">
+            <div
+              class="intro__slide"
+              style="background-image: url(images/intro-img.jpg)"
+            >
+              <h3 class="intro__title">Lightning Fast Shipping</h3>
+              <p class="intro__subtitle">From Our Haus to Yours</p>
+              <div class="intro__slides-counter">
+                <span class="intro__slide-current"></span>
+                <span class="intro__slide-all"></span>
               </div>
             </div>
-          </div>
-          <div class="products__item-wrap">
-            <div class="product__item">
-              <a href="#!" class="product-item__img">
-                <img src="images/content/product-img-2.png" alt="">
-                <div class="product-item__add">
-                  <button>+</button>
-                </div>
-              </a>
-              <h3 class="product-item__title">
-                <a href="#!">Elijah Craig Small Batch Bourbon Whiskey 750ml</a>
-              </h3>
-              <div class="product-item__price price__inner">
-                <span class="product-item__price-new price-new">$20.95</span>
-                <span class="product-item__price-old price-old">$24.95</span>
-              </div>
-            </div>
-          </div>
-          <div class="products__item-wrap">
-            <div class="product__item">
-              <a href="#!" class="product-item__img">
-                <img src="images/content/product-img-3.png" alt="">
-                <div class="product-item__add">
-                  <button>+</button>
-                </div>
-              </a>
-              <h3 class="product-item__title">
-                <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
-              </h3>
-              <div class="product-item__price price__inner">
-                <span class="product-item__price-new price-new">$20.95</span>
-                <span class="product-item__price-old price-old">$24.95</span>
-              </div>
-            </div>
-          </div>
-          <div class="products__item-wrap">
-            <div class="product__item">
-              <a href="#!" class="product-item__img">
-                <img src="images/content/product-img-2.png" alt="">
-                <div class="product-item__add">
-                  <button>+</button>
-                </div>
-              </a>
-              <h3 class="product-item__title">
-                <a href="#!">Elijah Craig Small Batch Bourbon Whiskey 750ml</a>
-              </h3>
-              <div class="product-item__price price__inner">
-                <span class="product-item__price-new price-new">$20.95</span>
-                <span class="product-item__price-old price-old">$24.95</span>
-              </div>
-            </div>
-          </div>
-          <div class="products__item-wrap">
-            <div class="product__item">
-              <a href="#!" class="product-item__img">
-                <img src="images/content/product-img-1.png" alt="">
-                <div class="product-item__add">
-                  <button>+</button>
-                </div>
-              </a>
-              <h3 class="product-item__title">
-                <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
-              </h3>
-              <div class="product-item__price price__inner">
-                <span class="product-item__price-new price-new">$20.95</span>
-                <span class="product-item__price-old price-old">$24.95</span>
-              </div>
-            </div>
-          </div>
-          <div class="products__item-wrap">
-            <div class="product__item">
-              <a href="#!" class="product-item__img">
-                <img src="images/content/product-img-3.png" alt="">
-                <div class="product-item__add">
-                  <button>+</button>
-                </div>
-              </a>
-              <h3 class="product-item__title">
-                <a href="#!">Elijah Craig Small Batch Bourbon Whiskey 750ml</a>
-              </h3>
-              <div class="product-item__price price__inner">
-                <span class="product-item__price-new price-new">$20.95</span>
-                <span class="product-item__price-old price-old">$24.95</span>
-              </div>
-            </div>
-          </div>
-          <div class="products__item-wrap">
-            <div class="product__item">
-              <a href="#!" class="product-item__img">
-                <img src="images/content/product-img-1.png" alt="">
-                <div class="product-item__add">
-                  <button>+</button>
-                </div>
-              </a>
-              <h3 class="product-item__title">
-                <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
-              </h3>
-              <div class="product-item__price price__inner">
-                <span class="product-item__price-new price-new">$20.95</span>
-                <span class="product-item__price-old price-old">$24.95</span>
-              </div>
-            </div>
-          </div>
-          <div class="products__item-wrap">
-            <div class="product__item">
-              <a href="#!" class="product-item__img">
-                <img src="images/content/product-img-2.png" alt="">
-                <div class="product-item__add">
-                  <button>+</button>
-                </div>
-              </a>
-              <h3 class="product-item__title">
-                <a href="#!">Elijah Craig Small Batch Bourbon Whiskey 750ml</a>
-              </h3>
-              <div class="product-item__price price__inner">
-                <span class="product-item__price-new price-new">$20.95</span>
-                <span class="product-item__price-old price-old">$24.95</span>
+            <div
+              class="intro__slide"
+              style="background-image: url(images/intro-img.jpg)"
+            >
+              <h3 class="intro__title">Lightning Fast Shipping</h3>
+              <p class="intro__subtitle">From Our Haus to Yours</p>
+              <div class="intro__slides-counter">
+                <span class="intro__slide-current"></span>
+                <span class="intro__slide-all"></span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- products -->
+      </section>
+      <!-- intro -->
 
-    <!-- rare -->
-    <section class="rare">
-      <div class="container">
-        <h2 class="rare__title">
-          <span>Rare & Hard To Find</span>
-        </h2>
-        <div class="rare__img">
-          <img src="images/rare-img.png" alt="">
-        </div>
-        <div class="rare__inner">
-          <div class="rare__green">
-            <p>
-              The Bottle Haus's team of connoisseurs have done all the hard work for you. </p>
+      <!-- steps -->
+      <section class="steps">
+        <div class="container">
+          <div class="steps__inner">
+            <div class="steps__item-wrap">
+              <div class="steps__item">
+                <h3 class="steps__title">
+                  <span>Search</span>
+                </h3>
+                <p class="steps__text">1500+ bottles to choose from</p>
+                <div class="steps__img">
+                  <img src="images/step-img-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="steps__item-wrap">
+              <div class="steps__item">
+                <h3 class="steps__title">
+                  <span>Tap</span>
+                </h3>
+                <p class="steps__text">
+                  Checkout in seconds with express checkout
+                </p>
+                <div class="steps__img">
+                  <img src="images/step-img-2.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="steps__item-wrap">
+              <div class="steps__item">
+                <h3 class="steps__title">
+                  <span>Drink</span>
+                </h3>
+                <p class="steps__text">Delivered to your door within days</p>
+                <div class="steps__img">
+                  <img src="images/step-img-3.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="rare__white">
-            <h4>Louis XIII Cognac</h4>
-            <p>
-              The oldest being over 100 years old
-            </p>
-          </div>
         </div>
-        <div class="rare__products">
+      </section>
+      <!-- steps -->
+
+      <!-- products -->
+      <section class="products">
+        <div class="container">
+          <div class="products__top">
+            <h2 class="section__title gray section__title--min">
+              Bottles <span>Under $50</span>
+            </h2>
+            <div class="see__all">
+              <a href="#!" class="btn-green"> Show all </a>
+            </div>
+          </div>
           <div class="products__inner">
             <div class="products__item-wrap">
               <div class="product__item">
                 <a href="#!" class="product-item__img">
-                  <img src="images/content/product-img-1.png" alt="">
+                  <img src="images/content/product-img-1.png" alt="" />
                   <div class="product-item__add">
                     <button>+</button>
                   </div>
@@ -357,13 +197,15 @@
             <div class="products__item-wrap">
               <div class="product__item">
                 <a href="#!" class="product-item__img">
-                  <img src="images/content/product-img-2.png" alt="">
+                  <img src="images/content/product-img-2.png" alt="" />
                   <div class="product-item__add">
                     <button>+</button>
                   </div>
                 </a>
                 <h3 class="product-item__title">
-                  <a href="#!">Elijah Craig Small Batch Bourbon Whiskey 750ml</a>
+                  <a href="#!"
+                    >Elijah Craig Small Batch Bourbon Whiskey 750ml</a
+                  >
                 </h3>
                 <div class="product-item__price price__inner">
                   <span class="product-item__price-new price-new">$20.95</span>
@@ -374,30 +216,7 @@
             <div class="products__item-wrap">
               <div class="product__item">
                 <a href="#!" class="product-item__img">
-                  <img src="images/content/product-img-3.png" alt="">
-                  <div class="product-item__add">
-                    <button>+</button>
-                  </div>
-                </a>
-                <h3 class="product-item__title">
-                  <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
-                </h3>
-                <div class="product-item__price price__inner">
-                  <span class="product-item__price-new price-new">$20.95</span>
-                  <span class="product-item__price-old price-old">$24.95</span>
-                </div>
-              </div>
-            </div>
-            <div class="products__item-wrap rare__card-text">
-              <span style="color:#ED8B43">I told</span>
-              <span style="color:#EBAD99">my wife</span>
-              <span style="color:#398383">it’s an</span>
-              <span style="color:#AC401C">investment</span>
-            </div>
-            <div class="products__item-wrap">
-              <div class="product__item">
-                <a href="#!" class="product-item__img">
-                  <img src="images/content/product-img-1.png" alt="">
+                  <img src="images/content/product-img-3.png" alt="" />
                   <div class="product-item__add">
                     <button>+</button>
                   </div>
@@ -414,13 +233,15 @@
             <div class="products__item-wrap">
               <div class="product__item">
                 <a href="#!" class="product-item__img">
-                  <img src="images/content/product-img-2.png" alt="">
+                  <img src="images/content/product-img-2.png" alt="" />
                   <div class="product-item__add">
                     <button>+</button>
                   </div>
                 </a>
                 <h3 class="product-item__title">
-                  <a href="#!">Elijah Craig Small Batch Bourbon Whiskey 750ml</a>
+                  <a href="#!"
+                    >Elijah Craig Small Batch Bourbon Whiskey 750ml</a
+                  >
                 </h3>
                 <div class="product-item__price price__inner">
                   <span class="product-item__price-new price-new">$20.95</span>
@@ -431,7 +252,7 @@
             <div class="products__item-wrap">
               <div class="product__item">
                 <a href="#!" class="product-item__img">
-                  <img src="images/content/product-img-3.png" alt="">
+                  <img src="images/content/product-img-1.png" alt="" />
                   <div class="product-item__add">
                     <button>+</button>
                   </div>
@@ -448,7 +269,26 @@
             <div class="products__item-wrap">
               <div class="product__item">
                 <a href="#!" class="product-item__img">
-                  <img src="images/content/product-img-1.png" alt="">
+                  <img src="images/content/product-img-3.png" alt="" />
+                  <div class="product-item__add">
+                    <button>+</button>
+                  </div>
+                </a>
+                <h3 class="product-item__title">
+                  <a href="#!"
+                    >Elijah Craig Small Batch Bourbon Whiskey 750ml</a
+                  >
+                </h3>
+                <div class="product-item__price price__inner">
+                  <span class="product-item__price-new price-new">$20.95</span>
+                  <span class="product-item__price-old price-old">$24.95</span>
+                </div>
+              </div>
+            </div>
+            <div class="products__item-wrap">
+              <div class="product__item">
+                <a href="#!" class="product-item__img">
+                  <img src="images/content/product-img-1.png" alt="" />
                   <div class="product-item__add">
                     <button>+</button>
                   </div>
@@ -465,494 +305,716 @@
             <div class="products__item-wrap">
               <div class="product__item">
                 <a href="#!" class="product-item__img">
-                  <img src="images/content/product-img-2.png" alt="">
+                  <img src="images/content/product-img-2.png" alt="" />
                   <div class="product-item__add">
                     <button>+</button>
                   </div>
                 </a>
                 <h3 class="product-item__title">
-                  <a href="#!">Elijah Craig Small Batch Bourbon Whiskey 750ml</a>
+                  <a href="#!"
+                    >Elijah Craig Small Batch Bourbon Whiskey 750ml</a
+                  >
                 </h3>
                 <div class="product-item__price price__inner">
                   <span class="product-item__price-new price-new">$20.95</span>
                   <span class="product-item__price-old price-old">$24.95</span>
                 </div>
               </div>
-            </div>
-            <div class="products__item-wrap">
-              <div class="product__item">
-                <a href="#!" class="product-item__img">
-                  <img src="images/content/product-img-3.png" alt="">
-                  <div class="product-item__add">
-                    <button>+</button>
-                  </div>
-                </a>
-                <h3 class="product-item__title">
-                  <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
-                </h3>
-                <div class="product-item__price price__inner">
-                  <span class="product-item__price-new price-new">$20.95</span>
-                  <span class="product-item__price-old price-old">$24.95</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="rare__products-text">
-            <p>
-              Whether you're sending a gift to someone special or simply just adding to your collection, let The Bottle
-              Haus be your one stop shop for everything rare.
-            </p>
-          </div>
-          <div class="rare__all">
-            <a href="#!" class="btn-green">
-              Show all
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- rare -->
-
-    <!-- reviews -->
-    <section class="reviews">
-      <div class="container">
-        <h2 class="section__title white reviews__title">
-          Let customers <span>Speak for us</span>
-        </h2>
-        <div class="reviews__slider">
-          <div class="reviews__slide-wrap">
-            <div class="reviews__slide">
-              <div class="reviews__wrap">
-                <div class="reviews__img">
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#quote-icon"></use>
-                  </svg>
-                </div>
-                <p class="reviews__text">
-                  To create this extraordinary blend, crown royal whiskies are carefully selected by their master
-                  blender.
-                  Checkout in seconds with express checkout
-                </p>
-                <p class="reviews__author">
-                  Josh Doae
-                </p>
-              </div>
-              <div class="reviews__product">
-                <img src="images/content/product-img-min-1.png" alt="">
-              </div>
-              <h3 class="reviews__product-name">
-                Sazerac Straight Rye Whiskey
-              </h3>
-            </div>
-          </div>
-          <div class="reviews__slide-wrap">
-            <div class="reviews__slide">
-              <div class="reviews__wrap">
-                <div class="reviews__img">
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#quote-icon"></use>
-                  </svg>
-                </div>
-                <p class="reviews__text">
-                  To create this extraordinary blend, crown royal whiskies are carefully selected by their master
-                  blender.
-                  Checkout in seconds with express checkout
-                </p>
-                <p class="reviews__author">
-                  Josh Doae
-                </p>
-              </div>
-              <div class="reviews__product">
-                <img src="images/content/product-img-min-1.png" alt="">
-              </div>
-              <h3 class="reviews__product-name">
-                Sazerac Straight Rye Whiskey
-              </h3>
-            </div>
-          </div>
-          <div class="reviews__slide-wrap">
-            <div class="reviews__slide">
-              <div class="reviews__wrap">
-                <div class="reviews__img">
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#quote-icon"></use>
-                  </svg>
-                </div>
-                <p class="reviews__text">
-                  To create this extraordinary blend, crown royal whiskies are carefully selected by their master
-                  blender.
-                  Checkout in seconds with express checkout
-                </p>
-                <p class="reviews__author">
-                  Josh Doae
-                </p>
-              </div>
-              <div class="reviews__product">
-                <img src="images/content/product-img-min-1.png" alt="">
-              </div>
-              <h3 class="reviews__product-name">
-                Sazerac Straight Rye Whiskey
-              </h3>
-            </div>
-          </div>
-          <div class="reviews__slide-wrap">
-            <div class="reviews__slide">
-              <div class="reviews__wrap">
-                <div class="reviews__img">
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#quote-icon"></use>
-                  </svg>
-                </div>
-                <p class="reviews__text">
-                  To create this extraordinary blend, crown royal whiskies are carefully selected by their master
-                  blender.
-                  Checkout in seconds with express checkout
-                </p>
-                <p class="reviews__author">
-                  Josh Doae
-                </p>
-              </div>
-              <div class="reviews__product">
-                <img src="images/content/product-img-min-1.png" alt="">
-              </div>
-              <h3 class="reviews__product-name">
-                Sazerac Straight Rye Whiskey
-              </h3>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- reviews -->
+      </section>
+      <!-- products -->
 
-    <!-- sale -->
-    <section class="sale">
-      <div class="sale__img">
-        <img src="images/content/sale-img.png" alt="">
-      </div>
-      <div class="sale__content">
-        <div class="sale__body">
-          <p class="product-card__suptitle">
-            Suplaer
-          </p>
-          <h2 class="product-card__title">
-            Alberta Premium Cask Strength Rye Canadian Whiskey 750ml
+      <!-- rare -->
+      <section class="rare">
+        <div class="container">
+          <h2 class="rare__title">
+            <span>Rare & Hard To Find</span>
           </h2>
-          <div class="product-card__df">
-            <div class="product-card__quantity quantity">
-              <button class="plus">+</button>
-              <input type="text" value="1">
-              <button class="minus">-</button>
+          <div class="rare__img">
+            <img src="images/rare-img.png" alt="" />
+          </div>
+          <div class="rare__inner">
+            <div class="rare__green">
+              <p>
+                The Bottle Haus's team of connoisseurs have done all the hard
+                work for you.
+              </p>
             </div>
-            <div class="product-card__price price__inner">
-              <span class="price-new">$20.95</span>
-              <span class="price-old">$24.95</span>
+            <div class="rare__white">
+              <h4>Louis XIII Cognac</h4>
+              <p>The oldest being over 100 years old</p>
             </div>
           </div>
-          <div class="product-card__reviews">
-            <div class="rate__glass" data-rateyo-read-only="true" data-rateyo-rating="4">
-
+          <div class="rare__products">
+            <div class="products__inner">
+              <div class="products__item-wrap">
+                <div class="product__item">
+                  <a href="#!" class="product-item__img">
+                    <img src="images/content/product-img-1.png" alt="" />
+                    <div class="product-item__add">
+                      <button>+</button>
+                    </div>
+                  </a>
+                  <h3 class="product-item__title">
+                    <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
+                  </h3>
+                  <div class="product-item__price price__inner">
+                    <span class="product-item__price-new price-new"
+                      >$20.95</span
+                    >
+                    <span class="product-item__price-old price-old"
+                      >$24.95</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="products__item-wrap">
+                <div class="product__item">
+                  <a href="#!" class="product-item__img">
+                    <img src="images/content/product-img-2.png" alt="" />
+                    <div class="product-item__add">
+                      <button>+</button>
+                    </div>
+                  </a>
+                  <h3 class="product-item__title">
+                    <a href="#!"
+                      >Elijah Craig Small Batch Bourbon Whiskey 750ml</a
+                    >
+                  </h3>
+                  <div class="product-item__price price__inner">
+                    <span class="product-item__price-new price-new"
+                      >$20.95</span
+                    >
+                    <span class="product-item__price-old price-old"
+                      >$24.95</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="products__item-wrap">
+                <div class="product__item">
+                  <a href="#!" class="product-item__img">
+                    <img src="images/content/product-img-3.png" alt="" />
+                    <div class="product-item__add">
+                      <button>+</button>
+                    </div>
+                  </a>
+                  <h3 class="product-item__title">
+                    <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
+                  </h3>
+                  <div class="product-item__price price__inner">
+                    <span class="product-item__price-new price-new"
+                      >$20.95</span
+                    >
+                    <span class="product-item__price-old price-old"
+                      >$24.95</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="products__item-wrap rare__card-text">
+                <span style="color: #ed8b43">I told</span>
+                <span style="color: #ebad99">my wife</span>
+                <span style="color: #398383">it’s an</span>
+                <span style="color: #ac401c">investment</span>
+              </div>
+              <div class="products__item-wrap">
+                <div class="product__item">
+                  <a href="#!" class="product-item__img">
+                    <img src="images/content/product-img-1.png" alt="" />
+                    <div class="product-item__add">
+                      <button>+</button>
+                    </div>
+                  </a>
+                  <h3 class="product-item__title">
+                    <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
+                  </h3>
+                  <div class="product-item__price price__inner">
+                    <span class="product-item__price-new price-new"
+                      >$20.95</span
+                    >
+                    <span class="product-item__price-old price-old"
+                      >$24.95</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="products__item-wrap">
+                <div class="product__item">
+                  <a href="#!" class="product-item__img">
+                    <img src="images/content/product-img-2.png" alt="" />
+                    <div class="product-item__add">
+                      <button>+</button>
+                    </div>
+                  </a>
+                  <h3 class="product-item__title">
+                    <a href="#!"
+                      >Elijah Craig Small Batch Bourbon Whiskey 750ml</a
+                    >
+                  </h3>
+                  <div class="product-item__price price__inner">
+                    <span class="product-item__price-new price-new"
+                      >$20.95</span
+                    >
+                    <span class="product-item__price-old price-old"
+                      >$24.95</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="products__item-wrap">
+                <div class="product__item">
+                  <a href="#!" class="product-item__img">
+                    <img src="images/content/product-img-3.png" alt="" />
+                    <div class="product-item__add">
+                      <button>+</button>
+                    </div>
+                  </a>
+                  <h3 class="product-item__title">
+                    <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
+                  </h3>
+                  <div class="product-item__price price__inner">
+                    <span class="product-item__price-new price-new"
+                      >$20.95</span
+                    >
+                    <span class="product-item__price-old price-old"
+                      >$24.95</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="products__item-wrap">
+                <div class="product__item">
+                  <a href="#!" class="product-item__img">
+                    <img src="images/content/product-img-1.png" alt="" />
+                    <div class="product-item__add">
+                      <button>+</button>
+                    </div>
+                  </a>
+                  <h3 class="product-item__title">
+                    <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
+                  </h3>
+                  <div class="product-item__price price__inner">
+                    <span class="product-item__price-new price-new"
+                      >$20.95</span
+                    >
+                    <span class="product-item__price-old price-old"
+                      >$24.95</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="products__item-wrap">
+                <div class="product__item">
+                  <a href="#!" class="product-item__img">
+                    <img src="images/content/product-img-2.png" alt="" />
+                    <div class="product-item__add">
+                      <button>+</button>
+                    </div>
+                  </a>
+                  <h3 class="product-item__title">
+                    <a href="#!"
+                      >Elijah Craig Small Batch Bourbon Whiskey 750ml</a
+                    >
+                  </h3>
+                  <div class="product-item__price price__inner">
+                    <span class="product-item__price-new price-new"
+                      >$20.95</span
+                    >
+                    <span class="product-item__price-old price-old"
+                      >$24.95</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="products__item-wrap">
+                <div class="product__item">
+                  <a href="#!" class="product-item__img">
+                    <img src="images/content/product-img-3.png" alt="" />
+                    <div class="product-item__add">
+                      <button>+</button>
+                    </div>
+                  </a>
+                  <h3 class="product-item__title">
+                    <a href="#!">Buffalo Trace Bourbon Cream 750ml</a>
+                  </h3>
+                  <div class="product-item__price price__inner">
+                    <span class="product-item__price-new price-new"
+                      >$20.95</span
+                    >
+                    <span class="product-item__price-old price-old"
+                      >$24.95</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="reviews__all">
-              <a href="#!">28 reviews</a>
+            <div class="rare__products-text">
+              <p>
+                Whether you're sending a gift to someone special or simply just
+                adding to your collection, let The Bottle Haus be your one stop
+                shop for everything rare.
+              </p>
             </div>
-          </div>
-          <div class="product-card__review-text">
-            <p>
-              A timeless style of malt whisky, Balcones “1” Texas Single Malt breathes new life into centuries of
-              distilling tradition with classic techniques and ingredients adapted for New Wosws <a href="#!">Read
-                more</a>
-            </p>
-          </div>
-          <div class="product-card__add">
-            <a href="#!" class="btn-orange">Add to Cart</a>
+            <div class="rare__all">
+              <a href="#!" class="btn-green"> Show all </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- rare -->
 
-
-    </section>
-    <!-- sale -->
-
-    <!-- collection -->
-    <section class="collection">
-      <div class="container">
-        <h2 class="section__title white collection__title">
-          Featured <span>Collections</span>
-        </h2>
-        <div class="collection__inner">
-          <div class="collection__column">
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-1">
-                <img src="images/collection/col-img-1.jpg" alt="">
-              </a>
-            </div>
-            <div class="collection__row">
-              <div class="collection__item-wrap">
-                <a href="#!" class="collection__item collection__item-2">
-                  <img src="images/collection/col-img-2.jpg" alt="">
-                </a>
+      <!-- reviews -->
+      <section class="reviews">
+        <div class="container">
+          <h2 class="section__title white reviews__title">
+            Let customers <span>Speak for us</span>
+          </h2>
+          <div class="reviews__slider">
+            <div class="reviews__slide-wrap">
+              <div class="reviews__slide">
+                <div class="reviews__wrap">
+                  <div class="reviews__img">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#quote-icon"></use>
+                    </svg>
+                  </div>
+                  <p class="reviews__text">
+                    To create this extraordinary blend, crown royal whiskies are
+                    carefully selected by their master blender. Checkout in
+                    seconds with express checkout
+                  </p>
+                  <p class="reviews__author">Josh Doae</p>
+                </div>
+                <div class="reviews__product">
+                  <img src="images/content/product-img-min-1.png" alt="" />
+                </div>
+                <h3 class="reviews__product-name">
+                  Sazerac Straight Rye Whiskey
+                </h3>
               </div>
-              <div class="collection__item-wrap">
-                <a href="#!" class="collection__item collection__item-3" style="background: #EBAD99;">
-                  Tequila
-                </a>
+            </div>
+            <div class="reviews__slide-wrap">
+              <div class="reviews__slide">
+                <div class="reviews__wrap">
+                  <div class="reviews__img">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#quote-icon"></use>
+                    </svg>
+                  </div>
+                  <p class="reviews__text">
+                    To create this extraordinary blend, crown royal whiskies are
+                    carefully selected by their master blender. Checkout in
+                    seconds with express checkout
+                  </p>
+                  <p class="reviews__author">Josh Doae</p>
+                </div>
+                <div class="reviews__product">
+                  <img src="images/content/product-img-min-1.png" alt="" />
+                </div>
+                <h3 class="reviews__product-name">
+                  Sazerac Straight Rye Whiskey
+                </h3>
               </div>
             </div>
-
-          </div>
-          <div class="collection__column">
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-4">
-                <img src="images/collection/col-img-3.jpg" alt="">
-              </a>
+            <div class="reviews__slide-wrap">
+              <div class="reviews__slide">
+                <div class="reviews__wrap">
+                  <div class="reviews__img">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#quote-icon"></use>
+                    </svg>
+                  </div>
+                  <p class="reviews__text">
+                    To create this extraordinary blend, crown royal whiskies are
+                    carefully selected by their master blender. Checkout in
+                    seconds with express checkout
+                  </p>
+                  <p class="reviews__author">Josh Doae</p>
+                </div>
+                <div class="reviews__product">
+                  <img src="images/content/product-img-min-1.png" alt="" />
+                </div>
+                <h3 class="reviews__product-name">
+                  Sazerac Straight Rye Whiskey
+                </h3>
+              </div>
             </div>
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-5" style="background: #FE8029;">
-                Gin
-              </a>
-            </div>
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-6">
-                <img src="images/collection/col-img-4.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="collection__column">
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-7">
-                <img src="images/collection/col-img-5.jpg" alt="">
-              </a>
-            </div>
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-8">
-                <img src="images/collection/col-img-6.jpg" alt="">
-              </a>
-            </div>
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-9">
-                <img src="images/collection/col-img-7.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="collection__column">
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-10" style="background: #94C4C8;">
-                Wine
-              </a>
-            </div>
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-11">
-                <img src="images/collection/col-img-8.jpg" alt="">
-              </a>
-            </div>
-            <div class="collection__item-wrap">
-              <a href="#!" class="collection__item collection__item-12" style="background: #125E5C;">
-                Rare & Hard To Find
-              </a>
+            <div class="reviews__slide-wrap">
+              <div class="reviews__slide">
+                <div class="reviews__wrap">
+                  <div class="reviews__img">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#quote-icon"></use>
+                    </svg>
+                  </div>
+                  <p class="reviews__text">
+                    To create this extraordinary blend, crown royal whiskies are
+                    carefully selected by their master blender. Checkout in
+                    seconds with express checkout
+                  </p>
+                  <p class="reviews__author">Josh Doae</p>
+                </div>
+                <div class="reviews__product">
+                  <img src="images/content/product-img-min-1.png" alt="" />
+                </div>
+                <h3 class="reviews__product-name">
+                  Sazerac Straight Rye Whiskey
+                </h3>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- collection -->
+      </section>
+      <!-- reviews -->
 
-    <!-- blogs -->
-    <section class="blog">
-      <div class="container">
-        <div class="blog__inner">
-          <div class="blog__text">
-            <h2>
-              Our Blogs
+      <!-- sale -->
+      <section class="sale">
+        <div class="sale__img">
+          <img src="images/content/sale-img.png" alt="" />
+        </div>
+        <div class="sale__content">
+          <div class="sale__body">
+            <p class="product-card__suptitle">Suplaer</p>
+            <h2 class="product-card__title">
+              Alberta Premium Cask Strength Rye Canadian Whiskey 750ml
             </h2>
+            <div class="product-card__df">
+              <div class="product-card__quantity quantity">
+                <button class="plus">+</button>
+                <input type="text" value="1" />
+                <button class="minus">-</button>
+              </div>
+              <div class="product-card__price price__inner">
+                <span class="price-new">$20.95</span>
+                <span class="price-old">$24.95</span>
+              </div>
+            </div>
+            <div class="product-card__reviews">
+              <div
+                class="rate__glass"
+                data-rateyo-read-only="true"
+                data-rateyo-rating="4"
+              ></div>
+              <div class="reviews__all">
+                <a href="#!">28 reviews</a>
+              </div>
+            </div>
+            <div class="product-card__review-text">
+              <p>
+                A timeless style of malt whisky, Balcones “1” Texas Single Malt
+                breathes new life into centuries of distilling tradition with
+                classic techniques and ingredients adapted for New Wosws
+                <a href="#!">Read more</a>
+              </p>
+            </div>
+            <div class="product-card__add">
+              <a href="#!" class="btn-orange">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- sale -->
+
+      <!-- collection -->
+      <section class="collection">
+        <div class="container">
+          <h2 class="section__title white collection__title">
+            Featured <span>Collections</span>
+          </h2>
+          <div class="collection__inner">
+            <div class="collection__column">
+              <div class="collection__item-wrap">
+                <a href="#!" class="collection__item collection__item-1">
+                  <img src="images/collection/col-img-1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="collection__row">
+                <div class="collection__item-wrap">
+                  <a href="#!" class="collection__item collection__item-2">
+                    <img src="images/collection/col-img-2.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="collection__item-wrap">
+                  <a
+                    href="#!"
+                    class="collection__item collection__item-3"
+                    style="background: #ebad99"
+                  >
+                    Tequila
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="collection__column">
+              <div class="collection__item-wrap">
+                <a href="#!" class="collection__item collection__item-4">
+                  <img src="images/collection/col-img-3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="collection__item-wrap">
+                <a
+                  href="#!"
+                  class="collection__item collection__item-5"
+                  style="background: #fe8029"
+                >
+                  Gin
+                </a>
+              </div>
+              <div class="collection__item-wrap">
+                <a href="#!" class="collection__item collection__item-6">
+                  <img src="images/collection/col-img-4.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="collection__column">
+              <div class="collection__item-wrap">
+                <a href="#!" class="collection__item collection__item-7">
+                  <img src="images/collection/col-img-5.jpg" alt="" />
+                </a>
+              </div>
+              <div class="collection__item-wrap">
+                <a href="#!" class="collection__item collection__item-8">
+                  <img src="images/collection/col-img-6.jpg" alt="" />
+                </a>
+              </div>
+              <div class="collection__item-wrap">
+                <a href="#!" class="collection__item collection__item-9">
+                  <img src="images/collection/col-img-7.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="collection__column">
+              <div class="collection__item-wrap">
+                <a
+                  href="#!"
+                  class="collection__item collection__item-10"
+                  style="background: #94c4c8"
+                >
+                  Wine
+                </a>
+              </div>
+              <div class="collection__item-wrap">
+                <a href="#!" class="collection__item collection__item-11">
+                  <img src="images/collection/col-img-8.jpg" alt="" />
+                </a>
+              </div>
+              <div class="collection__item-wrap">
+                <a
+                  href="#!"
+                  class="collection__item collection__item-12"
+                  style="background: #125e5c"
+                >
+                  Rare & Hard To Find
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- collection -->
+
+      <!-- blogs -->
+      <section class="blog">
+        <div class="container">
+          <div class="blog__inner">
+            <div class="blog__text">
+              <h2>Our Blogs</h2>
+              <p>
+                To create this extraordinary blend, crown blender and infused
+                with the juicy flavor
+              </p>
+              <a href="#!" class="btn-orange"> Read all </a>
+            </div>
+            <div class="blog__cards">
+              <div class="blog__card-wrap">
+                <div class="blog__card-item">
+                  <div class="blog__card-img">
+                    <a href="#!"
+                      ><img src="images/collection/col-img-1.jpg" alt=""
+                    /></a>
+                  </div>
+                  <h3 class="blog__card-title">
+                    <a href="#!">Enjoy $10 off $50 Subtotal</a>
+                  </h3>
+                  <p class="blog__card-date">02.10.21</p>
+                </div>
+              </div>
+              <div class="blog__card-wrap">
+                <div class="blog__card-item">
+                  <div class="blog__card-img">
+                    <a href="#!"
+                      ><img src="images/collection/col-img-1.jpg" alt=""
+                    /></a>
+                  </div>
+                  <h3 class="blog__card-title">
+                    <a href="#!">Enjoy $10 off $50 Subtotal</a>
+                  </h3>
+                  <p class="blog__card-date">02.10.21</p>
+                </div>
+              </div>
+              <div class="blog__card-wrap">
+                <div class="blog__card-item">
+                  <div class="blog__card-img">
+                    <a href="#!"
+                      ><img src="images/collection/col-img-1.jpg" alt=""
+                    /></a>
+                  </div>
+                  <h3 class="blog__card-title">
+                    <a href="#!">Enjoy $10 off $50 Subtotal</a>
+                  </h3>
+                  <p class="blog__card-date">02.10.21</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- blogs -->
+    </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__warning">
+            <h3 class="footer__title">Proposition 65 Warning</h3>
             <p>
-              To create this extraordinary blend, crown blender and infused with the juicy flavor
+              WARNING: Drinking distilled spirits, beer, coolers, wine and other
+              alcoholic beverages may increase cancer risk, and, during
+              pregnancy, can cause birth defects. For more information go to
+              www.P65Warnings.ca.gov/alcohol
             </p>
-            <a href="#!" class="btn-orange">
-              Read all
-            </a>
           </div>
-          <div class="blog__cards">
-            <div class="blog__card-wrap">
-              <div class="blog__card-item">
-                <div class="blog__card-img">
-                  <a href="#!"><img src="images/collection/col-img-1.jpg" alt=""></a>
-                </div>
-                <h3 class="blog__card-title">
-                  <a href="#!">Enjoy $10 off $50 Subtotal</a>
-                </h3>
-                <p class="blog__card-date">
-                  02.10.21
-                </p>
+          <div class="footer__sub">
+            <h3 class="footer__title">Newsletter</h3>
+            <p>
+              Subscribe to be the first to hear about our exclusive offers and
+              latest arrivals.
+            </p>
+            <div class="sub__form">
+              <form action="#!">
+                <input type="text" placeholder="Company (optional)" />
+                <button type="submit" class="btn-orange">Go</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__res">
+            <h3 class="footer__title">Resources</h3>
+            <ul>
+              <li><a href="#!">Terms and Conditions</a></li>
+              <li><a href="#!">Privacy Policy</a></li>
+              <li><a href="#!">Shipping & Returns</a></li>
+              <li><a href="#!">Contact Us</a></li>
+              <li><a href="#!">Order Tracking</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__pay">
+          <h3 class="pay__title">Accepted <span>Payments</span></h3>
+          <div class="pay__inner">
+            <div class="pay__item-wrap">
+              <div class="pay__item">
+                <img src="images/pay/pay-1.png" alt="" />
               </div>
             </div>
-            <div class="blog__card-wrap">
-              <div class="blog__card-item">
-                <div class="blog__card-img">
-                  <a href="#!"><img src="images/collection/col-img-1.jpg" alt=""></a>
-                </div>
-                <h3 class="blog__card-title">
-                  <a href="#!">Enjoy $10 off $50 Subtotal</a>
-                </h3>
-                <p class="blog__card-date">
-                  02.10.21
-                </p>
+            <div class="pay__item-wrap">
+              <div class="pay__item">
+                <img src="images/pay/pay-2.png" alt="" />
               </div>
             </div>
-            <div class="blog__card-wrap">
-              <div class="blog__card-item">
-                <div class="blog__card-img">
-                  <a href="#!"><img src="images/collection/col-img-1.jpg" alt=""></a>
-                </div>
-                <h3 class="blog__card-title">
-                  <a href="#!">Enjoy $10 off $50 Subtotal</a>
-                </h3>
-                <p class="blog__card-date">
-                  02.10.21
-                </p>
+            <div class="pay__item-wrap">
+              <div class="pay__item">
+                <img src="images/pay/pay-3.png" alt="" />
+              </div>
+            </div>
+            <div class="pay__item-wrap">
+              <div class="pay__item">
+                <img src="images/pay/pay-4.png" alt="" />
+              </div>
+            </div>
+            <div class="pay__item-wrap">
+              <div class="pay__item">
+                <img src="images/pay/pay-5.png" alt="" />
+              </div>
+            </div>
+            <div class="pay__item-wrap">
+              <div class="pay__item">
+                <img src="images/pay/pay-6.png" alt="" />
+              </div>
+            </div>
+            <div class="pay__item-wrap">
+              <div class="pay__item">
+                <img src="images/pay/pay-7.png" alt="" />
+              </div>
+            </div>
+            <div class="pay__item-wrap">
+              <div class="pay__item">
+                <img src="images/pay/pay-8.png" alt="" />
+              </div>
+            </div>
+            <div class="pay__item-wrap">
+              <div class="pay__item">
+                <img src="images/pay/pay-9.png" alt="" />
               </div>
             </div>
           </div>
         </div>
+        <div class="footer__dr">Please Drink Responsibly</div>
+        <div class="footer__copy">© 2021, Logo</div>
       </div>
-    </section>
-    <!-- blogs -->
+    </footer>
+    <!-- footer -->
 
-  </main>
-  <!-- main -->
+    <!-- svg sprite -->
+    <svg
+      class="app-svg"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <symbol id="search-icon" viewBox="0 0 16 16">
+        <path
+          d="M7.84442 13.8368C11.1539 13.8368 13.8368 11.1539 13.8368 7.84442C13.8368 4.53493 11.1539 1.85205 7.84442 1.85205C4.53493 1.85205 1.85205 4.53493 1.85205 7.84442C1.85205 11.1539 4.53493 13.8368 7.84442 13.8368Z"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M12.0122 12.3235L14.3615 14.6668"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="quote-icon" viewBox="0 0 48 42">
+        <path
+          d="M0.0102054 30.3076C0.0102054 36.6183 5.12573 41.7338 11.4363 41.7338C17.747 41.7338 22.8626 36.6183 22.8626 30.3076C22.8626 23.9969 17.747 18.8815 11.4363 18.8815C10.1394 18.8815 8.89794 19.1075 7.73574 19.506C10.3071 4.75849 21.8073 -4.75196 11.1467 3.07533C-0.674397 11.7549 -0.00245487 29.9584 0.0107723 30.292C0.0107723 30.2972 0.0102054 30.3018 0.0102054 30.3076Z"
+          fill="black"
+          fill-opacity="0.06"
+        />
+        <path
+          d="M25.1474 30.3076C25.1474 36.6183 30.263 41.7338 36.5737 41.7338C42.8843 41.7338 47.9999 36.6183 47.9999 30.3076C47.9999 23.9969 42.8843 18.8815 36.5736 18.8815C35.2765 18.8815 34.0352 19.1075 32.873 19.506C35.4443 4.75849 46.9445 -4.75196 36.2839 3.07533C24.4628 11.7549 25.1347 29.9584 25.148 30.292C25.148 30.2972 25.1474 30.3018 25.1474 30.3076Z"
+          fill="black"
+          fill-opacity="0.06"
+        />
+      </symbol>
+    </svg>
+    <!-- svg sprite -->
 
-  <!-- footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__warning">
-          <h3 class="footer__title">
-            Proposition 65 Warning
-          </h3>
-          <p>
-            WARNING: Drinking distilled spirits, beer, coolers, wine and other alcoholic beverages may increase cancer risk, and, during pregnancy, can cause birth defects. For more information go to www.P65Warnings.ca.gov/alcohol
-          </p>
-        </div>
-        <div class="footer__sub">
-          <h3 class="footer__title">
-            Newsletter
-          </h3>
-          <p>
-            Subscribe to be the first to hear about our exclusive offers and latest arrivals.
-          </p>
-          <div class="sub__form">
-            <form action="#!">
-              <input type="text" placeholder="Company (optional)">
-              <button type="submit" class="btn-orange">Go</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer__res">
-          <h3 class="footer__title">
-            Resources
-          </h3>
-          <ul>
-            <li><a href="#!">Terms and Conditions</a></li>
-            <li><a href="#!">Privacy Policy</a></li>
-            <li><a href="#!">Shipping & Returns</a></li>
-            <li><a href="#!">Contact Us</a></li>
-            <li><a href="#!">Order Tracking</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__pay">
-        <h3 class="pay__title">
-          Accepted <span>Payments</span>
-        </h3>
-        <div class="pay__inner">
-          <div class="pay__item-wrap">
-            <div class="pay__item">
-              <img src="images/pay/pay-1.png" alt="">
-            </div>
-          </div>
-          <div class="pay__item-wrap">
-            <div class="pay__item">
-              <img src="images/pay/pay-2.png" alt="">
-            </div>
-          </div>
-          <div class="pay__item-wrap">
-            <div class="pay__item">
-              <img src="images/pay/pay-3.png" alt="">
-            </div>
-          </div>
-          <div class="pay__item-wrap">
-            <div class="pay__item">
-              <img src="images/pay/pay-4.png" alt="">
-            </div>
-          </div>
-          <div class="pay__item-wrap">
-            <div class="pay__item">
-              <img src="images/pay/pay-5.png" alt="">
-            </div>
-          </div>
-          <div class="pay__item-wrap">
-            <div class="pay__item">
-              <img src="images/pay/pay-6.png" alt="">
-            </div>
-          </div>
-          <div class="pay__item-wrap">
-            <div class="pay__item">
-              <img src="images/pay/pay-7.png" alt="">
-            </div>
-          </div>
-          <div class="pay__item-wrap">
-            <div class="pay__item">
-              <img src="images/pay/pay-8.png" alt="">
-            </div>
-          </div>
-          <div class="pay__item-wrap">
-            <div class="pay__item">
-              <img src="images/pay/pay-9.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__dr">
-        Please Drink Responsibly
-      </div>
-      <div class="footer__copy">
-        © 2021, Logo
-      </div>
-    </div>
-  </footer>
-  <!-- footer -->
-
-
-  <!-- svg sprite -->
-  <svg class="app-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <symbol id="search-icon" viewBox="0 0 16 16">
-      <path
-        d="M7.84442 13.8368C11.1539 13.8368 13.8368 11.1539 13.8368 7.84442C13.8368 4.53493 11.1539 1.85205 7.84442 1.85205C4.53493 1.85205 1.85205 4.53493 1.85205 7.84442C1.85205 11.1539 4.53493 13.8368 7.84442 13.8368Z"
-        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M12.0122 12.3235L14.3615 14.6668" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-    </symbol>
-    <symbol id="quote-icon" viewBox="0 0 48 42">
-      <path
-        d="M0.0102054 30.3076C0.0102054 36.6183 5.12573 41.7338 11.4363 41.7338C17.747 41.7338 22.8626 36.6183 22.8626 30.3076C22.8626 23.9969 17.747 18.8815 11.4363 18.8815C10.1394 18.8815 8.89794 19.1075 7.73574 19.506C10.3071 4.75849 21.8073 -4.75196 11.1467 3.07533C-0.674397 11.7549 -0.00245487 29.9584 0.0107723 30.292C0.0107723 30.2972 0.0102054 30.3018 0.0102054 30.3076Z"
-        fill="black" fill-opacity="0.06" />
-      <path
-        d="M25.1474 30.3076C25.1474 36.6183 30.263 41.7338 36.5737 41.7338C42.8843 41.7338 47.9999 36.6183 47.9999 30.3076C47.9999 23.9969 42.8843 18.8815 36.5736 18.8815C35.2765 18.8815 34.0352 19.1075 32.873 19.506C35.4443 4.75849 46.9445 -4.75196 36.2839 3.07533C24.4628 11.7549 25.1347 29.9584 25.148 30.292C25.148 30.2972 25.1474 30.3018 25.1474 30.3076Z"
-        fill="black" fill-opacity="0.06" />
-    </symbol>
-  </svg>
-  <!-- svg sprite -->
-
-  <!--
+    <!--
      <svg xmlns="http://www.w3.org/2000/svg">
       <use xlink:href="#right-arrow"></use>
     </svg>
      -->
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.rateyo.min.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/burger.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
