@@ -221,10 +221,8 @@ body.oh {
 }
 
 .header__top {
-  position: relative;
   background-color: #ededed;
   padding: 16px 0;
-  z-index: 11;
 }
 
 .header__inner {
@@ -234,7 +232,9 @@ body.oh {
 }
 
 .menu__button {
+  position: relative;
   margin-right: auto;
+  z-index: 11;
 }
 
 .menu__button button {
@@ -245,6 +245,11 @@ body.oh {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.55s ease 0s;
+}
+
+.menu__button.active button {
+  border: 3px solid #2ebad3;
 }
 
 .menu__button-icon {
@@ -266,22 +271,31 @@ body.oh {
 .header__menu-bar {
   position: absolute;
   background-color: #f6f6f6;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top: -100%;
+  top: -120%;
   left: 0;
-  transition: all 0.5s ease 0s;
+  transition: all 0.7s ease 0s;
 }
 .header__menu-bar li {
+  position: relative;
+  bottom: -100%;
   margin: 0px 0px 10px 0px;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
 }
 .header__menu-bar.active {
   top: 0;
+}
+
+.header__menu-bar.active.header__menu-bar li {
+  bottom: 0;
+  opacity: 1;
 }
 
 .with-drop {
@@ -295,6 +309,7 @@ body.oh {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 11;
 }
 
 .header__actions {
@@ -387,6 +402,12 @@ body.oh {
 .header__catalog {
   background-color: #f6f6f6;
   padding: 35px 0;
+}
+
+@media (max-width: 920px) {
+  .header__catalog {
+    display: none;
+  }
 }
 
 .header__catalog ul {
