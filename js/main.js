@@ -1,4 +1,5 @@
 //Slider
+
 let sliderProducts = new Swiper(".slider-products", {
   navigation: {
     nextEl: ".slider-next",

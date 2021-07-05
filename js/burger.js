@@ -1,5 +1,5 @@
-let btnBurger = document.getElementById("menu__button");
-let menuBar = document.querySelector(".header__menu-bar");
+const btnBurger = document.getElementById("menu__button");
+const menuBar = document.querySelector(".header__menu-bar");
 
 btnBurger.addEventListener("click", () => {
   menuBar.classList.toggle("_active");
@@ -28,12 +28,13 @@ if (scrollBtn) {
 
 /* Анимация при скролле */
 const animBtn = document.getElementById("btn-up");
+const stepBlock = document.getElementById("steps");
 
 window.addEventListener("scroll", animOnScroll);
 
 function animOnScroll() {
-  const animItemHeight = animBtn.offsetHeight;
-  const animItemOffSet = offset(animBtn).top;
+  const animItemHeight = stepBlock.offsetHeight;
+  const animItemOffSet = offset(stepBlock).top;
   const animStart = 4;
 
   let animItemPoint = window.innerHeight - animItemHeight / animStart;
@@ -43,11 +44,11 @@ function animOnScroll() {
 
   if (
     pageYOffset > animItemOffSet - animItemPoint &&
-    pageYOffset < animItemOffSet + animItemHeight
+    pageYOffset < animItemOffSet - animItemHeight
   ) {
-    animBtn.classList.add("_active");
-  } else {
     animBtn.classList.remove("_active");
+  } else {
+    animBtn.classList.add("_active");
   }
 }
 
