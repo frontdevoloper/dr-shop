@@ -27,9 +27,12 @@ scrollBtn.addEventListener("click", (e) => {
 /* Нимация при скролле */
 
 const animBtn = document.getElementById("btn-up");
+const stepsBlock = document.querySelector(".steps");
 
-window.addEventListener("scroll", () => {
-  const animItemHeight = animBtn.offsetHeight;
+window.addEventListener("scroll", animOnScroll);
+
+function animOnScroll() {
+  const animItemHeight = stepsBlock.offsetHeight;
   const animItemOffSet = offset(animBtn).top;
   const animStart = 4;
 
@@ -46,7 +49,7 @@ window.addEventListener("scroll", () => {
   } else {
     animBtn.classList.remove("_active");
   }
-});
+}
 
 function offset(el) {
   const rect = el.getBoundingClientRect(),
