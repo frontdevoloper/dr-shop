@@ -1,38 +1,38 @@
-let btn = document.getElementById("menu__button");
+let btnBurger = document.getElementById("menu__button");
 let menuBar = document.querySelector(".header__menu-bar");
 
-btn.addEventListener("click", () => {
-  menuBar.classList.toggle("active");
-  btn.classList.toggle("active");
-  document.body.classList.toggle("block");
+btnBurger.addEventListener("click", () => {
+  menuBar.classList.toggle("_active");
+  btnBurger.classList.toggle("_active");
+  document.body.classList.toggle("_block");
 });
 
 /* Прокрутка к первой секции */
 
 const scrollBtn = document.getElementById("btn-up");
 
-scrollBtn.addEventListener("click", (e) => {
-  const gotoBlock = document.querySelector(scrollBtn.dataset.goto);
-  const gotoBlockValue =
-    gotoBlock.getBoundingClientRect().top +
-    pageYOffset -
-    document.getElementById("header").offsetHeight;
+if (scrollBtn) {
+  scrollBtn.addEventListener("click", (e) => {
+    const gotoBlock = document.querySelector(scrollBtn.dataset.goto);
+    const gotoBlockValue =
+      gotoBlock.getBoundingClientRect().top +
+      pageYOffset -
+      document.getElementById("header").offsetHeight;
 
-  window.scrollTo({
-    top: gotoBlockValue,
-    behavior: "smooth",
+    window.scrollTo({
+      top: gotoBlockValue,
+      behavior: "smooth",
+    });
   });
-});
+}
 
-/* Нимация при скролле */
-
+/* Анимация при скролле */
 const animBtn = document.getElementById("btn-up");
-const stepsBlock = document.querySelector(".steps");
 
 window.addEventListener("scroll", animOnScroll);
 
 function animOnScroll() {
-  const animItemHeight = stepsBlock.offsetHeight;
+  const animItemHeight = animBtn.offsetHeight;
   const animItemOffSet = offset(animBtn).top;
   const animStart = 4;
 
@@ -58,29 +58,3 @@ function offset(el) {
 
   return { top: rect.top + scrollTop, left: rect.left + screenLeft };
 }
-
-// if (animItems > 0) {
-//   window.addEventListener("scroll", animOnScroll);
-//   function animOnScroll() {
-//     for (let index = 0; index < animItems.length; index++) {
-//       const animItem = animItems[index];
-//       const animItemHeight = animItem.offsetHeight;
-//       const animItemOffSet = offset(animItem).top;
-//       const animStart = 4;
-
-//       let animItemPoint = window.innerHeight - animItemHeight / animStart;
-//       if (animItemHeight > window.innerHeight) {
-//         animItemPoint = window.innerHeight - window.innerHeight / animStart;
-//       }
-
-//       if (
-//         pageYOffSet > animItemOffSet - animItemPoint &&
-//         pageYOffset < animItemOffSet + animItemHeight
-//       ) {
-//         animItem.classList.add("_active");
-//       } else {
-//         animItem.classList.remove("_active");
-//       }
-//     }
-//   }
-//}

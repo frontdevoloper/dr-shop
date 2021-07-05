@@ -8,6 +8,7 @@ let sliderProducts = new Swiper(".slider-products", {
     el: ".progressbar-feel",
     type: "progressbar",
   },
+  speed: 900,
 });
 
 //Fraction
