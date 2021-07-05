@@ -4,4 +4,5 @@ let menuBar = document.querySelector(".header__menu-bar");
 btn.addEventListener("click", () => {
   menuBar.classList.toggle("active");
   btn.classList.toggle("active");
+  document.body.classList.toggle("block");
 });
