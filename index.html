@@ -23,7 +23,7 @@
 
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__menu-bar menu-bar">
         <div class="container">
           <ul class="menu-bar__list">
@@ -50,7 +50,7 @@
       <div class="header__top">
         <div class="container">
           <div class="header__inner">
-            <div class="menu__button">
+            <div class="menu__button" id="menu__button">
               <button>
                 <div class="menu__button-icon">
                   <span></span>
@@ -105,7 +105,7 @@
     <!-- main -->
     <main>
       <!-- intro -->
-      <section class="intro">
+      <section class="intro first-page">
         <div class="container">
           <div class="intro__slider">
             <div
@@ -984,7 +984,11 @@
     <!-- footer -->
 
     <!-- Button-up -->
-    <button class="btn-up"></button>
+    <button
+      data-goto=".first-page"
+      class="btn-up _anim-items"
+      id="btn-up"
+    ></button>
 
     <!-- svg sprite -->
     <svg

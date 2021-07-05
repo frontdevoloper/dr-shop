@@ -294,6 +294,7 @@ body.oh {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  overflow: auto;
 }
 
 .menu-bar__actions {
@@ -1596,8 +1597,16 @@ body.oh {
 .btn-up {
   top: 80%;
   right: 2%;
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: 0.7s ease;
   position: fixed;
   width: 24px;
   height: 84px;
   background: url("..//images/button-up.png");
+}
+
+.btn-up._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
