@@ -278,6 +278,7 @@ body.oh {
   top: 20px;
 }
 
+/*Menu bar*/
 .header__menu-bar {
   position: absolute;
   background-color: #f6f6f6;
@@ -302,6 +303,9 @@ body.oh {
   .menu-bar__actions {
     display: flex;
     flex-direction: column;
+  }
+  .header__menu-bar {
+    padding: 30px 0px 0px 0px;
   }
 }
 
@@ -1151,7 +1155,21 @@ body.oh {
   transition: all 0.5s ease;
 }
 
+.slider-products__img {
+  align-self: flex-end;
+}
+.slider-products__img-item {
+}
+
+/*Progressbar*/
+.slider-product__fraction {
+  position: relative;
+  z-index: 5;
+}
+
 .slider-products__progressbar {
+  position: relative;
+  z-index: 2;
   width: 180px;
   background: #c4c4c4;
 }
@@ -1166,17 +1184,12 @@ body.oh {
   background-color: #716f6f;
 }
 
-.slider-products__img {
-  align-self: flex-end;
-}
-.slider-products__img-item {
-}
-
+/*Navigation*/
 .wrapper-navigation {
   position: relative;
 }
 
-.slider-products__navigation {
+.navigation {
   background: #fcd0a1;
   border-radius: 2px 10px;
   display: flex;
@@ -1187,23 +1200,23 @@ body.oh {
   z-index: 3;
   align-items: center;
 }
-.slider-products__navigation-buttons {
+.navigation__buttons {
   display: flex;
   flex-direction: column;
 }
-.slider-products__navigation-text {
+.navigation__text {
   padding: 0px 0px 0px 30px;
   width: 270px;
   display: flex;
   justify-content: space-between;
 }
-.slider-products__navigation-subtitle {
+.navigation__subtitle {
   font-size: 0.9375rem;
   line-height: 1.3125rem;
   color: rgba(68, 58, 49, 0.42);
   margin: 0px 0px 9px 0px;
 }
-.slider-products__navigation-title {
+.navigation__title {
   font-size: 1.25rem;
   line-height: 130%;
 }
@@ -1223,7 +1236,7 @@ body.oh {
   left: 0;
 }
 
-.button-box {
+.navigation__button-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1235,14 +1248,14 @@ body.oh {
   transition: all 0.5s ease;
 }
 
-.button-box img {
+.navigation__button-box img {
   opacity: 0.4;
   transition: all 0.5s ease;
 }
-.button-box:hover {
+.navigation__button-box:hover {
   background: #f2bf88;
 }
-.button-box:hover img {
+.navigation__button-box:hover img {
   opacity: 1;
 }
 
@@ -1783,7 +1796,7 @@ body.oh {
   width: 24px;
   height: 84px;
   background: url("..//images/button-up.png");
-  z-index: 100;
+  z-index: 10;
 }
 
 .btn-up._active {

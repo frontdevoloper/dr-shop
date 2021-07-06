@@ -1,12 +1,3 @@
-const btnBurger = document.getElementById("menu__button");
-const menuBar = document.querySelector(".header__menu-bar");
-
-btnBurger.addEventListener("click", () => {
-  menuBar.classList.toggle("_active");
-  btnBurger.classList.toggle("_active");
-  document.body.classList.toggle("_block");
-});
-
 /* Прокрутка к первой секции */
 
 const scrollBtn = document.getElementById("btn-up");
